@@ -29,7 +29,7 @@ class Pm2NotificationServiceProvider extends ServiceProvider
         $this->registerConsoleCommands();
         $this->publishes([
             __DIR__ . '/../config/pm2-notification.php' => config_path('pm2-notification.php'),
-        ]);
+        ], 'pm2-notification');
     }
 
     protected function registerConsoleCommands()

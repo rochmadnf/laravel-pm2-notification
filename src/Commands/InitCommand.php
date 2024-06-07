@@ -28,6 +28,10 @@ class InitCommand extends Command
     {
         $this->info('Initialize PM2 Notification.');
 
+        if (!file_exists(config_path('pm2-notification.php'))) {
+            $this->call('vendor:publish', ['--tag' => 'pm2-notification']);
+        }
+
         $channel = $this->choice('Which channel would you like to use?', [
             'telegram',
         ], 0);
