@@ -1,6 +1,6 @@
 {
     "name": "rochmadnf/laravel-pm2-notification",
-    "description": "Alternative PM2 Plus Notification for laravel",
+    "description": "Alternative PM2 Notification for laravel",
     "keywords": [
         "laravel",
         "pm2",
