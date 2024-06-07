@@ -1,0 +1,44 @@
+{
+    "name": "rochmadnf/laravel-pm2-notification",
+    "description": "Alternative PM2 Plus Notification for laravel",
+    "keywords": [
+        "laravel",
+        "pm2",
+        "notification"
+    ],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/rochmadnf/laravel-pm2-notification/issues",
+        "source": "https://github.com/rochmadnf/laravel-pm2-notification"
+    },
+    "authors": [
+        {
+            "name": "Rochmad Nurul Fahmi",
+            "email": "rochmadnf@protonmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "illuminate/console": "^11.10",
+        "illuminate/support": "^11.10",
+        "symfony/console": "^7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rochmadnf\\Pm2Notification\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rochmadnf\\Pm2Notification\\Pm2NotificationServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
